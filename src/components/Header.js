@@ -1,8 +1,6 @@
 import React from 'react'
 import '../css/header.css'
-// import iconData from '../data/favicon.PNG'
 
-// {/* <img src={iconData} alt="ロゴ画像" width="100" /> */}
 const Header = () => {
   return (
     <header className='header-root'>
@@ -13,10 +11,10 @@ const Header = () => {
        </h1>
       <nav className="header-nav">
           <ul className='header-contents'>
-              <li className='header-content'><a href="/" className='header-a'>introduction</a></li>
-              <li className='header-content'><a href="/" className='header-a'>Career</a></li>
-              <li className='header-content'><a href="/" className='header-a'>Skill</a></li>
-              <li className='header-content'><a href="/" className='header-a'>Contact</a></li>
+              <li className='header-content'><a href="#introduction" className='header-a'>introduction</a></li>
+              <li className='header-content'><a href="#carrer" className='header-a'>Career</a></li>
+              <li className='header-content'><a href="#skill" className='header-a'>Skill</a></li>
+              <li className='header-content'><a href="#contact" className='header-a'>Contact</a></li>
           </ul>
       </nav>
     </header>

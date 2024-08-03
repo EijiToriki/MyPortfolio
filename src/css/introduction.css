@@ -1,0 +1,43 @@
+.introduction-top{
+  margin-top: 100px;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.introduction-title{
+  margin: 0; 
+  padding: 0;
+  font-size: 24px;
+}
+
+.introduction-contents{
+  margin-top: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+}
+
+.intro-content{
+  margin-left: 3%;
+}
+
+.intro-sentence{
+  width: 60%;
+  height: 350px;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .16);
+  color: #212121;
+  text-decoration: none;
+  margin-left: 10%;
+  padding-left: 5%;
+  padding-top: 3%;
+}
+
+.my-name{
+  font-size: 24px;
+}
+
+.intro-list{
+  font-size: 18px;
+  margin-bottom: 15px;
+}
