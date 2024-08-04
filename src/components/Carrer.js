@@ -20,7 +20,7 @@ const Carrer = () => {
           {
             carrer_table.map((carrer, idx) => {
               return(
-                <tr>
+                <tr key={idx}>
                   <td className='carrer-age-td'>{carrer.age}</td>
                   <td className='carrer-sentence-td'>{carrer.sentence}</td>
                 </tr>
@@ -44,7 +44,7 @@ const Carrer = () => {
                 <tr key={idx}>
                   <td className='carrer-age-td'>{output.age}</td>
                   <td className='carrer-sentence-td'>
-                    <a className='carrer-a' target="_blank" href={output.url}>
+                    <a className='carrer-a' target="_blank" href={output.url} rel="noopener noreferrer">
                       {output.sentence}
                     </a>
                   </td>
