@@ -9,10 +9,10 @@ const Introduction = () => {
         ■ Introduction
       </h1>
       <div className='introduction-contents'>
-        <img src={iconData} alt="ロゴ画像" height="350" className='intro-icon' />
+        <img src={iconData} alt="ロゴ画像" className='intro-icon' />
         <div className='intro-sentence'>
           <h3 className='my-name'>
-            鳥木　瑛司（とりき　えいじ）
+            鳥木 瑛司（とりき えいじ）
           </h3>
           <ul className='intro-content'>
               <li className='intro-list'>都内のSIer企業に勤める社会人３年目</li>

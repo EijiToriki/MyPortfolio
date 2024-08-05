@@ -1,49 +1,102 @@
-.contact-top{
-  margin-top: 5%;
-  margin-right: 10%;
-  margin-left: 10%;
+@media screen and (min-width: 960px) {
+  .contact-top{
+    margin-top: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+
+  .contact-title{
+    margin: 0; 
+    padding: 0;
+    font-size: 24px;
+  }
+
+  .contact-content{
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .16);
+    color: #212121;
+    text-decoration: none;
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .contact-sentence{
+    margin-left: 2%;
+  }
+
+  .contact-grid {
+    display: grid;
+    margin-right: 5%;
+    grid-template-columns: 30% 50%;
+    gap: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+  }
+
+  .contact-item {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .contact-a{
+    text-decoration: none;
+  }
 }
 
-.contact-title{
-  margin: 0; 
-  padding: 0;
-  font-size: 24px;
-}
 
-.contact-content{
-  background-color: #fff;
-  box-shadow: 0 0 8px rgba(0, 0, 0, .16);
-  color: #212121;
-  text-decoration: none;
-  margin-top: 1%;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 5%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
+@media screen and (max-width: 959px) {
+  .contact-top{
+    margin-top: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
 
-.contact-sentence{
-  margin-left: 2%;
-}
+  .contact-title{
+    margin: 0; 
+    padding: 0;
+    font-size: 24px;
+  }
 
-.contact-grid {
-  display: grid;
-  margin-right: 5%;
-  grid-template-columns: 30% 50%;
-  gap: 10px;
-  padding-left: 20px;
-  padding-bottom: 10px;
-}
+  .contact-content{
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .16);
+    color: #212121;
+    text-decoration: none;
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
-.contact-item {
-  font-size: 18px;
-  color: rgb(0, 0, 0);
-  padding: 16px;
-  text-align: center;
-  border-radius: 5px;
-}
+  .contact-sentence{
+    margin-left: 2%;
+  }
 
-.contact-a{
-  text-decoration: none;
+  .contact-grid {
+    display: grid;
+    margin-right: 5%;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+  }
+
+  .contact-item {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+  }
+
+  .contact-a{
+    text-decoration: none;
+  }
 }
