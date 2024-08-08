@@ -1,16 +1,18 @@
+.introduction-top{
+  margin-top: 100px;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.introduction-title{
+  margin: 0; 
+  padding: 0;
+  font-size: 24px;
+}
+
+
+
 @media screen and (min-width: 960px) {
-  .introduction-top{
-    margin-top: 100px;
-    margin-right: 10%;
-    margin-left: 10%;
-  }
-
-  .introduction-title{
-    margin: 0; 
-    padding: 0;
-    font-size: 24px;
-  }
-
   .introduction-contents{
     margin-top: 1%;
     margin-left: 5%;
@@ -51,18 +53,6 @@
 
 
 @media screen and (max-width: 959px) {
-  .introduction-top{
-    margin-top: 100px;
-    margin-right: 10%;
-    margin-left: 10%;
-  }
-
-  .introduction-title{
-    margin: 0; 
-    padding: 0;
-    font-size: 24px;
-  }
-
   .introduction-contents{
     margin-top: 1%;
     margin-left: 5%;

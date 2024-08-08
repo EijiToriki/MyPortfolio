@@ -1,28 +1,29 @@
+.skill-top{
+  margin-top: 5%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.skill-title{
+  margin: 0; 
+  padding: 0;
+  font-size: 24px;
+}
+
+.skill-content{
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .16);
+  color: #212121;
+  text-decoration: none;
+  margin-top: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+
 @media screen and (min-width: 960px) {
-  .skill-top{
-    margin-top: 5%;
-    margin-right: 10%;
-    margin-left: 10%;
-  }
-
-  .skill-title{
-    margin: 0; 
-    padding: 0;
-    font-size: 24px;
-  }
-
   .skill-def{
     text-align: right;
-    margin-right: 5%;
-  }
-
-  .skill-content{
-    background-color: #fff;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .16);
-    color: #212121;
-    text-decoration: none;
-    margin-top: 1%;
-    margin-left: 5%;
     margin-right: 5%;
   }
 
@@ -69,32 +70,10 @@
 }
 
 @media screen and (max-width: 959px) {
-  .skill-top{
-    margin-top: 5%;
-    margin-right: 10%;
-    margin-left: 10%;
-  }
-
-  .skill-title{
-    margin: 0; 
-    padding: 0;
-    font-size: 24px;
-  }
-
   .skill-def{
     text-align: right;
     margin-right: 5%;
     font-size: 12px;
-  }
-
-  .skill-content{
-    background-color: #fff;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .16);
-    color: #212121;
-    text-decoration: none;
-    margin-top: 1%;
-    margin-left: 5%;
-    margin-right: 5%;
   }
 
   .skill-name{
@@ -132,12 +111,11 @@
   }
 
   .certificate-item{
-    font-size: 18px;
+    font-size: 14px;
     background-color: #e8e8e8;
     color: rgb(0, 0, 0);
     padding: 16px;
     text-align: center;
     border-radius: 5px;
-    font-size: 14px;
   }
 }

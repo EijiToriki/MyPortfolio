@@ -1,5 +1,6 @@
 import React from 'react'
 import '../css/skill.css'
+import { certificate, framework, infrastructure, programming_language, tool  } from '../data/skillGridData'
 
 const Skill = () => {
   return (
@@ -15,26 +16,16 @@ const Skill = () => {
           〇プログラミング言語
         </h3>
         <div className='skill-grid'>
-          <div className='skill-item'>Python</div>
-          <div className='skill-item'>★★★</div>
-          <div className='skill-item'>JavaScript</div>
-          <div className='skill-item'>★★★</div>
-          <div className='skill-item'>Java</div>
-          <div className='skill-item'>★★</div>
-        </div>
-        <div className='skill-grid'>
-          <div className='skill-item'>C</div>
-          <div className='skill-item'>★★</div>
-          <div className='skill-item'>VBA</div>
-          <div className='skill-item'>★★</div>
-          <div className='skill-item'>php</div>
-          <div className='skill-item'>★</div>
-        </div>
-        <div className='skill-grid'>
-          <div className='skill-item'>Go</div>
-          <div className='skill-item'>★</div>
-          <div className='skill-item'>C++</div>
-          <div className='skill-item'>★</div>
+          {
+            programming_language.map((output, idx) => {
+              return(
+                <>
+                  <div key={idx} className='skill-item'>{output.skill}</div>
+                  <div className='skill-item'>{output.level}</div>
+                </>
+              )
+            })
+          }
         </div>
       </div>
       <div className='skill-content'>
@@ -42,16 +33,16 @@ const Skill = () => {
           〇フレームワーク
         </h3>
         <div className='skill-grid'>
-          <div className='skill-item'>React</div>
-          <div className='skill-item'>★★★</div>
-          <div className='skill-item'>SpringBoot</div>
-          <div className='skill-item'>★★</div>
-          <div className='skill-item'>flask</div>
-          <div className='skill-item'>★</div>
-        </div>
-        <div className='skill-grid'>
-          <div className='skill-item'>Vue</div>
-          <div className='skill-item'>★</div>
+          {
+            framework.map((output, idx) => {
+              return(
+                <>
+                  <div key={idx} className='skill-item'>{output.skill}</div>
+                  <div className='skill-item'>{output.level}</div>
+                </>
+              )
+            })
+          }
         </div>
       </div>
       <div className='skill-content'>
@@ -59,12 +50,16 @@ const Skill = () => {
           〇インフラ
         </h3>
         <div className='skill-grid'>
-          <div className='skill-item'>MySQL</div>
-          <div className='skill-item'>★★</div>
-          <div className='skill-item'>Oracle</div>
-          <div className='skill-item'>★★</div>
-          <div className='skill-item'>AWS(EC2, RDS etc)</div>
-          <div className='skill-item'>★</div>
+          {
+            infrastructure.map((output, idx) => {
+              return(
+                <>
+                  <div key={idx} className='skill-item'>{output.skill}</div>
+                  <div className='skill-item'>{output.level}</div>
+                </>
+              )
+            })
+          }
         </div>
       </div>
       <div className='skill-content'>
@@ -72,24 +67,16 @@ const Skill = () => {
           〇その他ツール
         </h3>
         <div className='skill-grid'>
-          <div className='skill-item'>Excel</div>
-          <div className='skill-item'>★★★</div>
-          <div className='skill-item'>PowerPoint</div>
-          <div className='skill-item'>★★★</div>
-          <div className='skill-item'>Word</div>
-          <div className='skill-item'>★★★</div>
-        </div>
-        <div className='skill-grid'>
-          <div className='skill-item'>Slack</div>
-          <div className='skill-item'>★★★</div>
-          <div className='skill-item'>Discord</div>
-          <div className='skill-item'>★★</div>
-          <div className='skill-item'>Git</div>
-          <div className='skill-item'>★★</div>
-        </div>
-        <div className='skill-grid'>
-          <div className='skill-item'>SVN</div>
-          <div className='skill-item'>★</div>
+          {
+            tool.map((output, idx) => {
+              return(
+                <>
+                  <div key={idx} className='skill-item'>{output.skill}</div>
+                  <div className='skill-item'>{output.level}</div>
+                </>
+              )
+            })
+          }
         </div>
       </div>
       <div className='skill-content'>
@@ -97,11 +84,13 @@ const Skill = () => {
           〇保有資格
         </h3>
         <div className='certificate-grid'>
-          <div className='certificate-item'>応用情報技術者試験</div>
-          <div className='certificate-item'>ネットワークスペシャリスト</div>
-          <div className='certificate-item'>JDLA E資格</div>
-          <div className='certificate-item'>統計検定２級</div>
-          <div className='certificate-item'>TOEIC Reading & Listening　スコア 845</div>
+          {
+            certificate.map((output, idx) => {
+              return(
+                <div key={idx} className='certificate-item'>{output}</div>
+              )
+            })
+          }
         </div>
       </div>
     </div>

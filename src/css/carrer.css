@@ -1,37 +1,41 @@
+.carrer-top{
+  margin-top: 5%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.carrer-title{
+  margin: 0; 
+  padding: 0;
+  font-size: 24px;
+}
+
+.carrer-content{
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .16);
+  color: #212121;
+  text-decoration: none;
+  margin-top: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.table-name{
+  font-size: 20px;
+  padding: 1%;
+}
+
+.carrer-table{
+  width: 90%;
+  padding-left: 5%;
+  padding-bottom: 2%;
+}
+
+.carrer-a{
+  text-decoration: none;
+}
+
 @media screen and (min-width: 960px) {
-  .carrer-top{
-    margin-top: 5%;
-    margin-right: 10%;
-    margin-left: 10%;
-  }
-
-  .carrer-title{
-    margin: 0; 
-    padding: 0;
-    font-size: 24px;
-  }
-
-  .carrer-content{
-    background-color: #fff;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .16);
-    color: #212121;
-    text-decoration: none;
-    margin-top: 1%;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-  .table-name{
-    font-size: 20px;
-    padding: 1%;
-  }
-
-  .carrer-table{
-    width: 90%;
-    padding-left: 5%;
-    padding-bottom: 2%;
-  }
-
   .carrer-age-th{
     font-size: 20px;
     width: 30%;
@@ -54,49 +58,11 @@
     font-size: 18px;
     padding-left: 1%;
     padding-bottom: 1%;
-  }
-
-  .carrer-a{
-    text-decoration: none;
   }
 }
 
 
-
 @media screen and (max-width: 959px) {
-  .carrer-top{
-    margin-top: 5%;
-    margin-right: 10%;
-    margin-left: 10%;
-  }
-
-  .carrer-title{
-    margin: 0; 
-    padding: 0;
-    font-size: 24px;
-  }
-
-  .carrer-content{
-    background-color: #fff;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .16);
-    color: #212121;
-    text-decoration: none;
-    margin-top: 1%;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-  .table-name{
-    font-size: 20px;
-    padding: 1%;
-  }
-
-  .carrer-table{
-    width: 90%;
-    padding-left: 5%;
-    padding-bottom: 2%;
-  }
-
   .carrer-age-th{
     font-size: 16px;
     width: 30%;
@@ -120,9 +86,5 @@
     font-size: 14px;
     padding-left: 10px;
     padding-bottom: 1%;
-  }
-
-  .carrer-a{
-    text-decoration: none;
   }
 }
