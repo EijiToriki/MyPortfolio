@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react'
 import '../css/contact.css'
 import { motion } from "framer-motion"
 
-const Contact = () => {
-  const [showContact, setShowContact] = useState(false);
+const Contact = ({ isVisible }) => {
+  const [showContact, setShowContact] = useState(isVisible);
 
   const handleScroll = () => {
     const scrollPosition = window.scrollY;

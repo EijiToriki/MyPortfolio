@@ -1,37 +1,8 @@
-import { useEffect, useState } from 'react';
 import '../css/carrer.css'
 import { carrer_table, output_table } from '../data/carrerTableData'
 import { motion } from "framer-motion"
-// import useIsMobile from '../utilities/useIsMobile';
 
 const Carrer = () => {
-  // const [showCarrer, setShowCarrer] = useState(false);
-  // const isMobile = useIsMobile();
-
-  // const handleScroll = () => {
-  //   const scrollPosition = window.scrollY;
-  //   const carrerElement = document.getElementById('carrer');
-    
-  //   if (carrerElement) {
-  //     const carrerOffsetTop = carrerElement.offsetTop;
-  //     if (scrollPosition > carrerOffsetTop - window.innerHeight - 100) {
-  //       setShowCarrer(true);
-  //     }
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   if (isMobile) {
-  //     window.addEventListener('scroll', handleScroll);
-  //   }
-
-  //   return () => {
-  //     if (isMobile) {
-  //       window.removeEventListener('scroll', handleScroll);
-  //     }
-  //   };
-  // }, [isMobile]);
-
   return (
     <div className='carrer-top' id='carrer'>
         <motion.div

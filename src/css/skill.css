@@ -2,6 +2,7 @@
   margin-top: 5%;
   margin-right: 10%;
   margin-left: 10%;
+  scroll-margin-top: 100px;
 }
 
 .skill-title{
@@ -43,6 +44,7 @@
 
   .skill-item {
     font-size: 18px;
+    font-weight: bold;
     background-color: #e8e8e8;
     color: rgb(0, 0, 0);
     padding: 16px;
@@ -93,6 +95,7 @@
 
   .skill-item {
     font-size: 18px;
+    font-weight: bold;
     background-color: #e8e8e8;
     color: rgb(0, 0, 0);
     padding: 8px;

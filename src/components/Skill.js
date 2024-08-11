@@ -3,8 +3,8 @@ import '../css/skill.css'
 import { certificate, framework, infrastructure, programming_language, tool  } from '../data/skillGridData'
 import { motion } from "framer-motion"
 
-const Skill = () => {
-  const [showSkill, setShowSkill] = useState(false);
+const Skill = ({ isVisible }) => {
+  const [showSkill, setShowSkill] = useState(isVisible);
 
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
@@ -24,6 +24,23 @@ const Skill = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const judgeSkillLevelColor = (level) => {
+    return (
+      level === '★★★'
+      ? {
+          background: 'linear-gradient(45deg, #B67B03 0%, #DAAF08 45%, #FEE9A0 70%, #DAAF08 85%, #B67B03 90% 100%)'
+        }
+      :
+      level === '★★'
+      ? {
+          background: 'linear-gradient(45deg, #757575 0%, #9E9E9E 45%, #E8E8E8 70%, #9E9E9E 85%, #757575 90% 100%)'
+        }
+      : {
+          background: 'linear-gradient(45deg, #8C4843 0%, #B76E4A 45%, #DAB89F 70%, #B76E4A 85%, #8C4843 90% 100%)'
+      }
+    )
+  }
   
   return (
     <div id='skill' div className='skill-top'>
@@ -47,12 +64,22 @@ const Skill = () => {
             <div className='skill-grid'>
               {
                 programming_language.map((output, idx) => {
-                  return(
+                  return (
                     <>
-                      <div key={idx} className='skill-item'>{output.skill}</div>
-                      <div className='skill-item'>{output.level}</div>
+                      <div
+                        key={idx}
+                        className='skill-item'
+                        style={
+                          judgeSkillLevelColor(output.level)
+                        }
+                      >
+                        {output.skill}
+                      </div>
+                      <div className='skill-item'>
+                        {output.level}
+                      </div>
                     </>
-                  )
+                  );
                 })
               }
             </div>
@@ -66,8 +93,18 @@ const Skill = () => {
                 framework.map((output, idx) => {
                   return(
                     <>
-                      <div key={idx} className='skill-item'>{output.skill}</div>
-                      <div className='skill-item'>{output.level}</div>
+                      <div
+                        key={idx}
+                        className='skill-item'
+                        style={
+                          judgeSkillLevelColor(output.level)
+                        }
+                      >
+                        {output.skill}
+                      </div>
+                      <div className='skill-item'>
+                        {output.level}
+                      </div>
                     </>
                   )
                 })
@@ -83,8 +120,18 @@ const Skill = () => {
                 infrastructure.map((output, idx) => {
                   return(
                     <>
-                      <div key={idx} className='skill-item'>{output.skill}</div>
-                      <div className='skill-item'>{output.level}</div>
+                      <div
+                        key={idx}
+                        className='skill-item'
+                        style={
+                          judgeSkillLevelColor(output.level)
+                        }
+                      >
+                        {output.skill}
+                      </div>
+                      <div className='skill-item'>
+                        {output.level}
+                      </div>
                     </>
                   )
                 })
@@ -100,8 +147,18 @@ const Skill = () => {
                 tool.map((output, idx) => {
                   return(
                     <>
-                      <div key={idx} className='skill-item'>{output.skill}</div>
-                      <div className='skill-item'>{output.level}</div>
+                      <div
+                        key={idx}
+                        className='skill-item'
+                        style={
+                          judgeSkillLevelColor(output.level)
+                        }
+                      >
+                        {output.skill}
+                      </div>
+                      <div className='skill-item'>
+                        {output.level}
+                      </div>
                     </>
                   )
                 })
