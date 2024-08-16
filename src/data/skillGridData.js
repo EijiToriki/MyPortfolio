@@ -101,10 +101,6 @@ const tool = [
     skill : "SVN",
     level : "★"
   },
-  {
-    skill : "C++",
-    level : "★"
-  },  
 ]
 
 const certificate = [
